@@ -20,13 +20,13 @@
                 </a>
                 <ul class="site-nav list">
                     <li class="item">
-                        <a class="list current" href="./index.html"> Студия </a>
+                        <a class="link current" href="./index.html"> Студия </a>
                     </li>
                     <li class="item">
-                        <a href="portfolio.html"> Портфолио </a>
+                        <a class="link" href="portfolio.html"> Портфолио </a>
                     </li>
                     <li class="item">
-                        <a href=""> Контакты </a>
+                        <a class="link" href=""> Контакты </a>
                     </li>
                 </ul>
 
@@ -53,6 +53,13 @@
     </header>
 
     <main>
+        <!--MODAL WINDOW-->
+        <div class="backdrop-service is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close>Закрыть</button>
+            </div>
+        </div>
+
         <!-- HERO -->
         <section class="hero">
             <div class="container">
@@ -60,9 +67,8 @@
                     <li class="item">
                         <h1 class="hero-title">Эффективные решения для Вашего бизнеса</h1>
                     </li>
-
                     <li>
-                        <a class="hero-button" href="#">Заказать услугу</a>
+                        <button class="hero-button" data-modal-open>Заказать услугу</button>
                     </li>
                 </ul>
             </div>
@@ -80,8 +86,7 @@
                                 </svg>
                             </div>
                             <p class="features-title">Внимание к деталям</p>
-                            <p class="features-text">Идейные соображения, а также начало повседневной работы по
-                                формированию позиции.</p>
+                            <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </div>
                     </li>
 
@@ -93,8 +98,7 @@
                                 </svg>
                             </div>
                             <p class="features-title">Пунктуальность</p>
-                            <p class="features-text">Задача организации, в особенности же рамки и место обучения
-                                кадров влечет за собой.</p>
+                            <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </div>
                     </li>
 
@@ -106,8 +110,7 @@
                                 </svg>
                             </div>
                             <p class="features-title">Планирование</p>
-                            <p class="features-text">Равным образом консультация с широким активом в значительной
-                                степени обуславливает.</p>
+                            <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </div>
                     </li>
 
@@ -119,8 +122,7 @@
                                 </svg>
                             </div>
                             <p class="features-title">Современные технологии</p>
-                            <p class="features-text">Значимость этих проблем настолько очевидна, что реализация
-                                плановых заданий.</p>
+                            <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </div>
                     </li>
                 </ul>
@@ -134,24 +136,29 @@
                 <div class="title">
                     <h2> Чем мы занимаемся </h2>
                 </div>
-
                 <ul class="about-card-set list">
                     <li class="item">
                         <div class="about-card-thumb">
-                            <img class="about-image" src="./images/imgbox_1.png" alt="складаємо план-схему сайту"
-                                width="370" height="294">
+                            <img class="about-image" src="./images/imgbox_1.png" alt="складаємо план-схему сайту" width="370" height="294">
+                        </div>
+                        <div class="about-text">
+                            <p>Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="item">
                         <div class="about-card-thumb">
-                            <img class="about-image" src="./images/imgbox_2.png"
-                                alt="припасовуємо для використання на мобільному пристрої" width="370" height="294">
+                            <img class="about-image" src="./images/imgbox_2.png" alt="припасовуємо для використання на мобільному пристрої" width="370" height="294">
+                        </div>
+                        <div class="about-text">
+                            <p>Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="item">
                         <div class="about-card-thumb">
-                            <img class="about-image" src="./images/imgbox_3.png" alt="удосконалюємо дизайн" width="370"
-                                height="294">
+                            <img class="about-image" src="./images/imgbox_3.png" alt="удосконалюємо дизайн" width="370" height="294">
+                        </div>
+                        <div class="about-text">
+                            <p>Дизайнерские решения</p>
                         </div>
                     </li>
                 </ul>
@@ -168,8 +175,7 @@
                     <li class="item">
                         <div class="team-one-card">
                             <div class="team-card-thumb">
-                                <img src="./images/team_item_1.jpg" alt="Игорь Демьяненко, Product Designer" width="270"
-                                    height="260">
+                                <img src="./images/team_item_1.jpg" alt="Игорь Демьяненко, Product Designer" width="270" height="260">
                             </div>
                             <div class="team-card-content">
                                 <p class="team-title">Игорь Демьяненко</p>
@@ -254,8 +260,7 @@
                     <li class="item">
                         <div class="team-one-card">
                             <div class="team-card-thumb">
-                                <img src="./images/team_item_3.jpg" alt="Николай Тарасов, Marketing" width="270"
-                                    height="260">
+                                <img src="./images/team_item_3.jpg" alt="Николай Тарасов, Marketing" width="270" height="260">
                             </div>
                             <div class="team-card-content">
                                 <p class="team-title">Николай Тарасов</p>
@@ -297,8 +302,7 @@
                     <li class="item">
                         <div class="team-one-card">
                             <div class="team-card-thumb">
-                                <img class="team-image" src="./images/team_item_4.jpg" alt="Михаил Ермаков, UI Designer"
-                                    width="270" height="260">
+                                <img class="team-image" src="./images/team_item_4.jpg" alt="Михаил Ермаков, UI Designer" width="270" height="260">
                             </div>
                             <div class="team-card-content">
                                 <p class="team-title">Михаил Ермаков </p>
@@ -456,6 +460,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
