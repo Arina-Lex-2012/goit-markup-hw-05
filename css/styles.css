@@ -566,6 +566,7 @@ p {
 
 .portfolio-thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-thumb::before {
@@ -577,20 +578,20 @@ p {
   height: 100%;
 
   background-color: rgba(33, 150, 243, 0.9);
-  transition-property: opacity;
+
+  transform: translate(0, 100%);
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-
-  opacity: 0;
 }
 
 .portfolio-thumb:hover::before {
-  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .portfolio-cards .item:hover .portfolio-thumb::before,
 .portfolio-cards .item:hover .portfolio-thumb .text {
-  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .portfolio-thumb .text {
@@ -604,11 +605,11 @@ p {
   line-height: 1.56;
 
   color: var(--primary-white-color);
-  transition-property: opacity;
+
+  transform: translate(0, 100%);
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-
-  opacity: 0;
 }
 
 .portfolio-image {
